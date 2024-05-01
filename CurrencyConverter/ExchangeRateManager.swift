@@ -20,7 +20,7 @@ class ExchangeRateManager {
         let url = URL(string: "\(self.url)&base_currency=\(currency)&currencies=\(toCurrency)")!
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            if let err = error {
+            if error != nil {
                 self.handleClientError(error!)
                 DispatchQueue.main.async {
                     completion(nil)

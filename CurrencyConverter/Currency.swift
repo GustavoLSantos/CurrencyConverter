@@ -18,5 +18,6 @@ class CurrencyState {
         Currency(code: "EUR", symbol: "€"),
         Currency(code: "GBP", symbol: "£"),
         Currency(code: "CAD", symbol: "$"),
+        Currency(code: "BRL", symbol: "R$"),
     ]
 }
